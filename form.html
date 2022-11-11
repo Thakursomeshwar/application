@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application</title>
+    <style>
+        *{
+            margin: 0%;padding: 0%;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+        .box1{
+            width: 90vw;
+            height: 90vh;
+            display: flex;
+            margin: auto;
+            border: 7px solid black;
+        }
+        .box2{
+            width: 82vw;
+            height: 85vh;
+            margin: auto;
+            padding: 10px;
+            border: 3px solid black;
+            text-transform: uppercase;
+        }
+        .all{
+            display: flex;
+            justify-content: space-between;
+        }
+        input{
+            text-transform: uppercase;
+        }
+        .hb{
+            width: 150px;
+            height: 100px;
+        }
+        .pic{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pic input{
+            font-size: 17px;}
+    </style>
+</head>
+<body>
+    <div class="box"><div class="box1"><div class="box2">
+        <form action="formsubmit.co/thakursomu13@gmail.com" method="post">
+        <center><h1>application form</h1></center><br><br><br><br>
+       <div class="all"><div class="content">
+        name &rarr; <input type="text" placeholder="write your name" minlength="4" maxlength="20" name="username" required><br><br>
+       d.o.b &rarr; <input type="date" required value="dob" name="dob"><br><br>
+       gender &rarr; <input type="radio" name="gender" value="male" > male    <input type="radio" name="gender" value="female"> female    <input type="radio" name="gender" value="other"> other <br><br>
+       course &rarr; <input type="text" list="course_li" name="usercourse" required>
+       <datalist id="course_li">
+        <option >bba</option>
+        <option >bca</option><br><br></datalist><br><br>
+        admission no. &rarr; <input type="password" placeholder="write your adm no." minlength="5" maxlength="17" name="adm" required><br><br>
+       phone no. &rarr; <input type="tel" minlength="13" maxlength="13" value="+91"><br><br>
+       email &rarr; <input type="email"><br><br>
+       hobbies &rarr; <input type="text" class="hb" placeholder="your hobbies" name="hobbies" required><br><br></div>
+       <div class="pic"><input type="file" accept="image/*"></div></div>
+       <div class="btn"><center><button type="submit">SUBMIT</button> <button type="reset">RESET</button></center></div>
+    </form></div></div></div>
+</body>
+</html>
